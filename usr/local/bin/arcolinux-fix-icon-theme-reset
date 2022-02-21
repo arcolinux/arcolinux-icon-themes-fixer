@@ -15,6 +15,17 @@
 #
 ###############################################################################
 
+if [ -d /usr/share/icons/Arc ]; then
+	
+	FIND="Inherits=Moka,Faba,elementary,Adwaita,gnome,hicolor"
+	REPLACE="Inherits=Moka,Faba,elementary,Adwaita,gnome,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Arc/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Arc
+	
+fi
+
+
 if [ -d /usr/share/icons/breeze ]; then
 	
 	FIND="Inherits=hicolor"
