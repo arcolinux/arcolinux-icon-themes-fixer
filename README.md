@@ -1,0 +1,1 @@
+# ArcoLinux-icon-themes-fixer
